@@ -8,6 +8,6 @@ export default defineConfig({
 	integrations: [tailwind()],
 	output: "hybrid",
 	adapter: cloudflare({
-		imageService: "cloudflare",
+		imageService: "compile",
 	}),
 });
