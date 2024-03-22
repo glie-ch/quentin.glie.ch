@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import me from '../me.png';
 ---
 
@@ -15,7 +15,7 @@ import me from '../me.png';
 		<div class="flex flex-col items-center justify-center h-screen">
 			<div class="w-[600px] h-[600px] bg-spots rounded-full animate-container flex flex-col items-center justify-center">
 				<div class="animate-head relative overflow-hidden h-[500px] w-[500px] rounded-full bg-light">
-					<Image class="absolute inset animate-zoom translate-[15%_8%]" src={me} alt="Me" />
+					<Picture width="500" formats={["webp", "avif"]} densities={[1, 2, 3]} class="absolute inset animate-zoom translate-[15%_8%]" src={me} alt="Me" />
 				</div>
 			</div>
 		</div>
